@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>FirstSead Driving School | Expert Driving Lessons in Lagos</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Loading Spinner -->
+    <div id="loader">
+      <div class="spinner"></div>
+      <p>FirstSead is starting up...</p>
+    </div>
+    <div id="app">
+      <!-- Navigation -->
+      <header class="navbar">
+        <div class="container">
+          <a href="#home" class="logo-link">
+            <img
+              src="./public/Assets/FirstSead_logo.png"
+              alt="First Sead Logo"
+              class="logo-img"
+            />
+          </a>
+          <div class="logo">
+            <a href="#home" class="logo-link">
+              <h1>First<span class="logo-red">Sead</span></h1>
+            </a>
+          </div>
+          <!-- Hamburger Button -->
+          <button class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <nav>
+            <ul class="nav-links" id="nav-list">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Packages</a></li>
+              <li><a href="#license">Driver's License</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact" class="btn-small">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <span class="badge">Accredited: RC1251516</span>
+            <h1>
+              Get Best Driving Skills in <span class="highlight">Few Days</span>
+            </h1>
+            <p>
+              Patient, professional instructors dedicated to building your
+              confidence on the road. We specialize in anxious learners and
+              fast-track license processing.
+            </p>
+            <div class="hero-btns">
+              <a href="#services" class="btn-primary">View Packages</a>
+              <a href="https://wa.me/2347062010167" class="btn-secondary">
+                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+              </a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="image-placeholder">
+              <img
+                src="./public/Assets/image.png"
+                alt="FirstSead Driving Car"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Pricing Section -->
+      <section id="services" class="pricing">
+        <div class="container">
+          <div class="section-header">
+            <h2>Our Training Packages</h2>
+            <p>
+              Flexible sessions designed for your success. Prices are subject to
+              review.
+            </p>
+          </div>
+
+          <!-- Tab Navigation -->
+          <div class="tabs">
+            <button class="tab-btn active" data-target="automatic">
+              Automatic
+            </button>
+            <button class="tab-btn" data-target="manual">Manual</button>
+            <button class="tab-btn" data-target="weekend">Weekend</button>
+            <button class="tab-btn" data-target="license">
+              Driver's License
+            </button>
+          </div>
+
+          <!-- Tab Content -->
+          <div class="tab-content">
+            <!-- Automatic Training -->
+            <div class="tab-panel active" id="automatic">
+              <div class="pricing-grid">
+                <!-- Small Card Example -->
+                <div class="price-card">
+                  <h3>6 Sessions</h3>
+                  <div class="amount">₦35,000</div>
+                  <ul>
+                    <li><i class="fas fa-check"></i> Basic Controls</li>
+                    <li><i class="fas fa-check"></i> Patient Instructor</li>
+                  </ul>
+                </div>
+                <!-- You'll add 8, 10, 12, 15 here... but let's highlight the 25 session one -->
+                <div class="price-card featured">
+                  <div class="popular-tag">Full Training</div>
+                  <h3>25 Sessions</h3>
+                  <div class="amount">₦115,000</div>
+                  <ul>
+                    <li><i class="fas fa-check"></i> Comprehensive Skills</li>
+                    <li>
+                      <i class="fas fa-certificate"></i>
+                      <strong>Free Certificate</strong>
+                    </li>
+                    <li><i class="fas fa-id-card"></i> License Support</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Simple list for the other prices to save space -->
+              <div class="price-list">
+                <p>
+                  Other Automatic options: 8 Sessions (₦45k) | 10 Sessions
+                  (₦55k) | 12 Sessions (₦60k) | 15 Sessions (₦75k)
+                </p>
+              </div>
+            </div>
+
+            <!-- Manual Training -->
+            <div class="tab-panel" id="manual">
+              <div class="pricing-grid">
+                <div class="price-card">
+                  <h3>8 Sessions</h3>
+                  <div class="amount">₦50,000</div>
+                </div>
+                <div class="price-card featured">
+                  <div class="popular-tag">Full Training</div>
+                  <h3>25 Sessions</h3>
+                  <div class="amount">₦125,000</div>
+                  <p>Includes Certificate</p>
+                </div>
+              </div>
+              <div class="price-list">
+                <p>
+                  Other Manual options: 10 Sessions (₦60k) | 12 Sessions (₦65k)
+                  | 15 Sessions (₦80k)
+                </p>
+              </div>
+            </div>
+
+            <!-- Driver's License Section -->
+            <div class="tab-panel" id="license">
+              <div class="license-container">
+                <div class="license-box">
+                  <h4>Internal Candidates</h4>
+                  <p>3 Years: <strong>₦50,000</strong></p>
+                  <p>5 Years: <strong>₦55,000</strong></p>
+                </div>
+                <div class="license-box">
+                  <h4>External Candidates</h4>
+                  <p>3 Years: <strong>₦55,000</strong></p>
+                  <p>5 Years: <strong>₦60,000</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About & Instructors Section -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-header">
+            <h2>Meet Our Professional Instructors</h2>
+            <p>
+              Highly qualified graduates dedicated to turning nervous beginners
+              into confident drivers.
+            </p>
+          </div>
+
+          <div class="instructor-grid">
+            <!-- Instructor 1: Mr. Taiwo -->
+            <div class="instructor-card">
+              <div class="instructor-img">
+                <!-- Placeholder until photo is ready -->
+                <div class="placeholder-avatar">
+                  <i class="fas fa-user-tie"></i>
+                </div>
+                <!-- <img src="/images/taiwo.jpg" alt="Mr. Taiwo Babatunde"> -->
+              </div>
+              <div class="instructor-info">
+                <span class="qualification-badge">Graduate Instructor</span>
+                <h3>Mr. Taiwo Babatunde</h3>
+                <p>
+                  Expert in confidence-building. Passionate about helping
+                  students overcome driving anxiety through bespoke, patient
+                  coaching.
+                </p>
+              </div>
+            </div>
+
+            <!-- Instructor 2: Mr. Emmanuel -->
+            <div class="instructor-card">
+              <div class="instructor-img">
+                <div class="placeholder-avatar">
+                  <i class="fas fa-user-tie"></i>
+                </div>
+                <!-- <img src="/images/emmanuel.jpg" alt="Mr. Emmanuel"> -->
+              </div>
+              <div class="instructor-info">
+                <span class="qualification-badge">Graduate Instructor</span>
+                <h3>Mr. Emmanuel</h3>
+                <p>
+                  Focuses on focus and foresight. A patient teacher who excels
+                  at preparing students for high-way and interstate driving.
+                </p>
+              </div>
+            </div>
+
+            <!-- Instructor 3: Mr. Noah -->
+            <div class="instructor-card">
+              <div class="instructor-img">
+                <div class="placeholder-avatar">
+                  <i class="fas fa-user-tie"></i>
+                </div>
+                <!-- <img src="/images/noah.jpg" alt="Mr. Noah"> -->
+              </div>
+              <div class="instructor-info">
+                <span class="qualification-badge">Graduate Instructor</span>
+                <h3>Mr. Noah</h3>
+                <p>
+                  Prioritizes safety above all. Known for a calm and
+                  professional approach that ensures students understand every
+                  aspect of the road.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Why Us / Philosophy (Based on Client's specific answers) -->
+          <div class="philosophy-box">
+            <div class="philosophy-text">
+              <h3>Why Choose FirstSead?</h3>
+              <ul>
+                <li>
+                  <i class="fas fa-heart"></i>
+                  <strong>Patience is Priority:</strong> We specialize in
+                  anxious drivers.
+                </li>
+                <li>
+                  <i class="fas fa-graduation-cap"></i>
+                  <strong>Educated Trainers:</strong> All our instructors are
+                  university graduates.
+                </li>
+                <li>
+                  <i class="fas fa-car-side"></i>
+                  <strong>Flexible Learning:</strong> Special arrangements for
+                  tight work schedules.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials">
+        <div class="container">
+          <div class="section-header">
+            <h2>What Our Students Say</h2>
+            <p>
+              Real stories from drivers who found their confidence with
+              FirstSead.
+            </p>
+          </div>
+
+          <div class="testimonial-grid">
+            <!-- Review 1: Tolu Busari -->
+            <div class="testimonial-card">
+              <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+              <p>
+                "After many years of feeling incredibly anxious behind the
+                wheel, I came across FirstSead. My sessions with Mr. Taiwo were
+                bespoke to my requirements. I wouldn't have even started my
+                journey without him."
+              </p>
+              <div class="reviewer-info">
+                <div class="reviewer-name">Tolu Busari</div>
+                <div class="review-stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 2: Helen Bolaji -->
+            <div class="testimonial-card">
+              <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+              <p>
+                "Emmanuel is a patient and helpful teacher who gave me lots of
+                confidence. I moved to FirstSead after learning elsewhere but
+                wasn't confident. Now, I drive highway and interstate!"
+              </p>
+              <div class="reviewer-info">
+                <div class="reviewer-name">Helen Bolaji</div>
+                <div class="review-stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 3: Lucy Akinpelu -->
+            <div class="testimonial-card">
+              <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+              <p>
+                "I had built up a lot of fear and panic about driving. Mr. Taiwo
+                is calm and reassuring. I now feel totally different, ready to
+                get onto the roads and keep improving. Highly recommended!"
+              </p>
+              <div class="reviewer-info">
+                <div class="reviewer-name">Lucy Akinpelu</div>
+                <div class="review-stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 4: Kelly Toluwani -->
+            <div class="testimonial-card">
+              <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+              <p>
+                "I wanted a calm, professional instructor. Noah is all this and
+                more! He explains all aspects of driving and makes sure you
+                understand. I always felt safe and calm."
+              </p>
+              <div class="reviewer-info">
+                <div class="reviewer-name">Kelly Toluwani</div>
+                <div class="review-stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ Section -->
+      <section id="faq" class="faq">
+        <div class="container">
+          <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>
+              Everything you need to know about our lessons and the Driver's
+              License process.
+            </p>
+          </div>
+
+          <div class="faq-accordion">
+            <!-- Question 1 -->
+            <div class="faq-item">
+              <button class="faq-header">
+                <span>Can the training fee be negotiated?</span>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="faq-body">
+                <p>
+                  Our fees are already discounted; no further discount can be
+                  offered due to high maintenance costs of our training
+                  vehicles.
+                </p>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="faq-item">
+              <button class="faq-header">
+                <span>Can I have a special arrangement for my training?</span>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="faq-body">
+                <p>
+                  Yes! You may choose any day and time that favors you,
+                  depending on availability. Please note that special weekend or
+                  custom timing might attract extra fees.
+                </p>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="faq-item">
+              <button class="faq-header">
+                <span>Do you offer pick up and drop off?</span>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="faq-body">
+                <p>
+                  Yes. Our instructors can come to your location to pick you up
+                  for training and drop you off afterward. This option comes at
+                  an extra cost calculated based on your location and the number
+                  of training days.
+                </p>
+              </div>
+            </div>
+
+            <!-- Question 4: The FRSC Process -->
+            <div class="faq-item">
+              <button class="faq-header">
+                <span>How do I obtain a new Driver's License?</span>
+                <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="faq-body">
+                <div class="steps">
+                  <div class="step">
+                    <strong>1. Training:</strong> Complete mandatory training at
+                    our accredited school.
+                  </div>
+                  <div class="step">
+                    <strong>2. Certificate:</strong> Obtain your Driving School
+                    Certificate number from us.
+                  </div>
+                  <div class="step">
+                    <strong>3. Online Portal:</strong> Visit
+                    nigeriadriverslicence.frsc.gov.ng and select "New Driver's
+                    Licence."
+                  </div>
+                  <div class="step">
+                    <strong>4. Biometrics:</strong> You must visit the capture
+                    center in person.
+                  </div>
+                </div>
+                <p class="note">
+                  <strong>Timeline:</strong> Renewals take ~5 working days. New
+                  licenses take ~5 weeks, subject to FRSC portal availability.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="contact-wrapper">
+            <!-- Left: Contact Information -->
+            <div class="contact-info">
+              <h2>Ready to Start Your Journey?</h2>
+              <p>
+                Contact us today to book your first lesson or process your
+                driver's license.
+              </p>
+
+              <div class="contact-details">
+                <div class="contact-item">
+                  <i class="fas fa-phone-alt"></i>
+                  <div>
+                    <h4>Call Us</h4>
+                    <p>
+                      <a href="tel:07062010167">07062010167</a>,
+                      <a href="tel:08063629847">08063629847</a>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <i class="fab fa-whatsapp"></i>
+                  <div>
+                    <h4>WhatsApp</h4>
+                    <p>
+                      <a href="https://wa.me/2347062010167">Chat with us now</a>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <i class="fas fa-envelope"></i>
+                  <div>
+                    <h4>Email</h4>
+                    <p>
+                      <a href="mailto:firstseadlimited@gmail.com"
+                        >firstseadlimited@gmail.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="office-locations">
+                <div class="location-box">
+                  <h4>Head Office (Agege)</h4>
+                  <p>26 Okeho street, Dopemu, Agege, Lagos.</p>
+                </div>
+                <div class="location-box">
+                  <h4>Branch Office (Shasha)</h4>
+                  <p>
+                    84 Shasha Road, Opposite NNPC Station, Shasha, Off Egbeda
+                    Lagos.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Booking Form -->
+            <div class="contact-form-container">
+              <h3>Book a Lesson</h3>
+              <form id="booking-form">
+                <div class="form-group">
+                  <input type="text" placeholder="Full Name" required />
+                </div>
+                <div class="form-group">
+                  <input type="tel" placeholder="Phone Number" required />
+                </div>
+                <div class="form-group">
+                  <select required>
+                    <option value="" disabled selected>Select Service</option>
+                    <option value="automatic">Automatic Training</option>
+                    <option value="manual">Manual Training</option>
+                    <option value="license">Driver's License Processing</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <textarea
+                    placeholder="Tell us your location or special requirements..."
+                    rows="4"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn-primary full-width">
+                  Send Request
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Map Section -->
+      <section class="map-section">
+        <!-- Use the Shasha location map since it's on a major road -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.285334646776!2d3.306722275816953!3d6.611425422133656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b91080d57273b%3A0x2843be7da829775f!2s26%20Okeho%20St%2C%20Dopemu%2C%20Lagos%20300001%2C%20Lagos!5e0!3m2!1sen!2sng!4v1766724882700!5m2!1sen!2sng"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <h2>First<span class="logo-red">Sead</span></h2>
+              <p>
+                Empowering drivers with confidence and safety since 2015.
+                Accredited by FRSC.
+              </p>
+              <p class="rc-number">RC1251516</p>
+            </div>
+
+            <div class="footer-links">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Packages</a></li>
+                <li><a href="#about">Instructors</a></li>
+                <li><a href="#faq">FAQ</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-social">
+              <h4>Follow Us</h4>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p>&copy; 2024 FirstSead Driving School. All Rights Reserved.</p>
+            <p>Designed with ❤️ by DevDee</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
