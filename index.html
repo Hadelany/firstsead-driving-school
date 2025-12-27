@@ -3,6 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Get the best driving skills in a few days at FirstSead Driving School. Accredited instructors, flexible schedules, and fast-track license processing in Lagos."
+    />
+    <meta
+      name="keywords"
+      content="Driving school Lagos, Driving school Agege, Egbeda driving lessons, FRSC driver license Nigeria"
+    />
+
+    <!-- Social Media Preview (Open Graph) -->
+    <meta
+      property="og:title"
+      content="FirstSead Driving School | Expert Lessons in Lagos"
+    />
+    <meta
+      property="og:description"
+      content="Accredited training for manual and automatic cars. Start your journey to becoming a confident driver today!"
+    />
+    <meta property="og:image" content="/Assets/logo.png" />
+    <!-- This shows the logo in WhatsApp chats -->
+    <meta property="og:type" content="website" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <title>FirstSead Driving School | Expert Driving Lessons in Lagos</title>
     <link rel="stylesheet" href="./src/style.css" />
@@ -58,7 +80,7 @@
       </header>
 
       <!-- Hero Section -->
-      <section id="home" class="hero">
+      <section id="home" class="hero reveal">
         <div class="container hero-content">
           <div class="hero-text">
             <span class="badge">Accredited: RC1251516</span>
@@ -88,7 +110,7 @@
         </div>
       </section>
       <!-- Pricing Section -->
-      <section id="services" class="pricing">
+      <section id="services" class="pricing reveal">
         <div class="container">
           <div class="section-header">
             <h2>Our Training Packages</h2>
@@ -189,7 +211,7 @@
         </div>
       </section>
       <!-- About & Instructors Section -->
-      <section id="about" class="about">
+      <section id="about" class="about reveal">
         <div class="container">
           <div class="section-header">
             <h2>Meet Our Professional Instructors</h2>
@@ -284,7 +306,8 @@
         </div>
       </section>
       <!-- Testimonials Section -->
-      <section id="testimonials" class="testimonials">
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials reveal">
         <div class="container">
           <div class="section-header">
             <h2>What Our Students Say</h2>
@@ -294,84 +317,98 @@
             </p>
           </div>
 
-          <div class="testimonial-grid">
-            <!-- Review 1: Tolu Busari -->
-            <div class="testimonial-card">
-              <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-              <p>
-                "After many years of feeling incredibly anxious behind the
-                wheel, I came across FirstSead. My sessions with Mr. Taiwo were
-                bespoke to my requirements. I wouldn't have even started my
-                journey without him."
-              </p>
-              <div class="reviewer-info">
-                <div class="reviewer-name">Tolu Busari</div>
-                <div class="review-stars">
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i>
+          <div class="testimonial-slider">
+            <div class="testimonial-container" id="testimonial-container">
+              <!-- Slide 1: Tolu Busari -->
+              <div class="testimonial-card">
+                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                <p>
+                  "After many years of feeling incredibly anxious behind the
+                  wheel, I came across FirstSead. My sessions with Mr. Taiwo
+                  were bespoke to my requirements. I wouldn't have even started
+                  my journey without him."
+                </p>
+                <div class="reviewer-info">
+                  <div class="reviewer-name">Tolu Busari</div>
+                  <div class="review-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2: Helen Bolaji -->
+              <div class="testimonial-card">
+                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                <p>
+                  "Emmanuel is a patient and helpful teacher who gave me lots of
+                  confidence. I moved to FirstSead after learning elsewhere but
+                  wasn't confident. Now, I drive highway and interstate!"
+                </p>
+                <div class="reviewer-info">
+                  <div class="reviewer-name">Helen Bolaji</div>
+                  <div class="review-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3: Lucy Akinpelu -->
+              <div class="testimonial-card">
+                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                <p>
+                  "I had built up a lot of fear and panic about driving. Mr.
+                  Taiwo is calm and reassuring. I now feel totally different,
+                  ready to get onto the roads and keep improving. Highly
+                  recommended!"
+                </p>
+                <div class="reviewer-info">
+                  <div class="reviewer-name">Lucy Akinpelu</div>
+                  <div class="review-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 4: Kelly Toluwani -->
+              <div class="testimonial-card">
+                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                <p>
+                  "I wanted a calm, professional instructor. Noah is all this
+                  and more! He explains all aspects of driving and makes sure
+                  you understand. I always felt safe and calm."
+                </p>
+                <div class="reviewer-info">
+                  <div class="reviewer-name">Kelly Toluwani</div>
+                  <div class="review-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <!-- Review 2: Helen Bolaji -->
-            <div class="testimonial-card">
-              <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-              <p>
-                "Emmanuel is a patient and helpful teacher who gave me lots of
-                confidence. I moved to FirstSead after learning elsewhere but
-                wasn't confident. Now, I drive highway and interstate!"
-              </p>
-              <div class="reviewer-info">
-                <div class="reviewer-name">Helen Bolaji</div>
-                <div class="review-stars">
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-
-            <!-- Review 3: Lucy Akinpelu -->
-            <div class="testimonial-card">
-              <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-              <p>
-                "I had built up a lot of fear and panic about driving. Mr. Taiwo
-                is calm and reassuring. I now feel totally different, ready to
-                get onto the roads and keep improving. Highly recommended!"
-              </p>
-              <div class="reviewer-info">
-                <div class="reviewer-name">Lucy Akinpelu</div>
-                <div class="review-stars">
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-
-            <!-- Review 4: Kelly Toluwani -->
-            <div class="testimonial-card">
-              <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-              <p>
-                "I wanted a calm, professional instructor. Noah is all this and
-                more! He explains all aspects of driving and makes sure you
-                understand. I always felt safe and calm."
-              </p>
-              <div class="reviewer-info">
-                <div class="reviewer-name">Kelly Toluwani</div>
-                <div class="review-stars">
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i>
-                </div>
-              </div>
+            <!-- Slider Controls -->
+            <div class="slider-controls">
+              <button id="prevTestimonial" class="control-btn">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <div class="slider-dots" id="slider-dots"></div>
+              <button id="nextTestimonial" class="control-btn">
+                <i class="fas fa-chevron-right"></i>
+              </button>
             </div>
           </div>
         </div>
       </section>
       <!-- FAQ Section -->
-      <section id="faq" class="faq">
+      <section id="faq" class="faq reveal">
         <div class="container">
           <div class="section-header">
             <h2>Frequently Asked Questions</h2>
@@ -612,5 +649,15 @@
       </footer>
     </div>
     <script type="module" src="/src/main.js"></script>
+    <!-- Floating WhatsApp Button -->
+    <a
+      href="https://wa.me/2347062010167"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fab fa-whatsapp"></i>
+      <span>Chat with us</span>
+    </a>
   </body>
 </html>
