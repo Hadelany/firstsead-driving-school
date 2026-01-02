@@ -427,15 +427,19 @@ a {
   background-color: var(--bg-light);
 }
 
+.section-header p {
+  max-width: 600px; /* Limits the width so it doesn't look like a long string */
+  margin: 0 auto; /* Centers the text block on the page */
+  line-height: 1.6; /* Adds breathing room between lines */
+  text-align: center;
+}
+
 .instructor-grid {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(300px, 450px)
-  ); /* Limits max width */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 400px));
   gap: 30px;
   margin-top: 40px;
-  justify-content: center; /* Centers the two cards on the page */
+  justify-content: center;
 }
 
 .instructor-card {
@@ -466,12 +470,14 @@ a {
 .instructor-img::before {
   content: "";
   position: absolute;
-  top: 15%;
-  width: 200px;
-  height: 200px;
-  background: var(--accent-color); /* Your logo's light blue */
+  top: 10%; /* Moved up slightly to be behind the head */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Perfect centering */
+  width: 220px;
+  height: 220px;
+  background: var(--accent-color);
   filter: blur(60px);
-  opacity: 0.15;
+  opacity: 0.12; /* Subtle is better */
   border-radius: 50%;
   z-index: 0;
 }
@@ -501,22 +507,27 @@ a {
 .qualification-badge {
   display: inline-block;
   background: #ebf4ff;
-  color: var(--accent-color);
-  padding: 4px 12px;
+  color: var(--primary-color);
+  padding: 5px 15px;
   border-radius: 20px;
-  font-size: 0.75rem;
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
 }
 
 .instructor-info h3 {
   color: var(--primary-color);
-  margin-bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
 .instructor-info p {
   font-size: 0.95rem;
   color: #4a5568;
+  line-height: 1.6;
 }
 
 /* Philosophy Box */
