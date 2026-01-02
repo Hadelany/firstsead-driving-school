@@ -429,9 +429,13 @@ a {
 
 .instructor-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 450px)
+  ); /* Limits max width */
   gap: 30px;
   margin-top: 40px;
+  justify-content: center; /* Centers the two cards on the page */
 }
 
 .instructor-card {
@@ -448,11 +452,28 @@ a {
 }
 
 .instructor-img {
-  height: 250px;
-  background: #e2e8f0;
+  height: 300px;
+  /* A clean, professional studio-style gradient */
+  background: radial-gradient(circle at 50% 30%, #ffffff 0%, #e2e8f0 100%);
   display: flex;
-  align-items: center;
+  align-items: flex-end; /* Sits the instructor on the bottom edge */
   justify-content: center;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 4px solid var(--primary-color); /* Matches your brand navy */
+}
+/* Add a subtle brand-colored 'Halo' behind them */
+.instructor-img::before {
+  content: "";
+  position: absolute;
+  top: 15%;
+  width: 200px;
+  height: 200px;
+  background: var(--accent-color); /* Your logo's light blue */
+  filter: blur(60px);
+  opacity: 0.15;
+  border-radius: 50%;
+  z-index: 0;
 }
 
 .placeholder-avatar {
@@ -461,11 +482,18 @@ a {
 }
 
 .instructor-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 95%; /* Leaves a tiny bit of breathing room at the top */
+  width: auto;
+  object-fit: contain; /* Ensures they don't look stretched or cut off */
+  z-index: 1;
+  /* Adds a soft shadow so they look 3D and real */
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.15));
+  transition: transform 0.3s ease;
 }
 
+.instructor-card:hover .instructor-img img {
+  transform: scale(1.05) translateY(-5px); /* Professional 'lean-in' effect */
+}
 .instructor-info {
   padding: 25px;
 }
